@@ -1,0 +1,21 @@
+{
+  "all_cleaned_outputs_identical": true,
+  "cleaned_files_compared": 9,
+  "notebook_executed": true,
+  "notebook_code_cells_executed": 4,
+  "fresh_kernel_runner": "nbclient.NotebookClient; completed successfully in separate kernel on 2026-10-04",
+  "first_run": "python clean_data.py --source-root ORIGINALS --output-dir outputs",
+  "second_run": "cleaning.ipynb Restart Kernel / Run All; DSO576_SOURCE_ROOT=ORIGINALS; DSO576_OUTPUT_DIR=outputs/repeat",
+  "independent_validation_passed_both_runs": true,
+  "hashes": {
+    "cleaned/anthropic_occupations.csv": "d63e5c2792e53fb9dd398ddbb1701af57fa95afea7ed427e0cf24f1aaa611925",
+    "cleaned/bls_ca_occupations.csv": "3848579b4a3a0f2e4e49c33296ad927c5604bfc154bb256507301e9f215746f0",
+    "cleaned/ca_claude_soc_prefix.csv": "49ec9bc1fb7d249c821bc3f20fac3d10b403bc89c74bee855d1398a035ed99a0",
+    "cleaned/ca_workforce_context.csv": "c183264667ffc1ba08d0355ba7493b7a863be27489b05907176452c1434b0ec2",
+    "cleaned/usa_share_of_messages_by_onet_iwa_month.csv": "1521d1d88c7bafc28b720bc72567a71b23287f8df97f9a22d71cdc033f28999e",
+    "cleaned/usa_share_of_messages_by_state_2025_rank.csv": "38f05269f4e4ebec9b0030ec05de3b5890be96b445a2a3e37beac46b26cfb0fa",
+    "cleaned/usa_share_of_messages_by_topic_state_2025.csv": "b375421ca9604f7f1a539c302d7b23dcf854a7facbc44affa285cbc515dd79bb",
+    "cleaned/usa_share_of_work_related_messages_by_onet_iwa_month.csv": "0f38cd759a7acb8abbd9d2a482f9801bbda7db9d442a114c6881bfee5e7310b6",
+    "cleaned_sample.csv": "9e13d276078cf5504e1964c5961f6771bbb40dc43ec3275cde2b0818c32440d8"
+  }
+}
