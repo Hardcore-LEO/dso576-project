@@ -1,0 +1,501 @@
+{
+  "ai_mapping_and_aggregation": {
+    "aggregated_duplicate_key_rows": 0,
+    "aggregated_rows": 6607,
+    "claude_usage_pct_max": 9.75,
+    "claude_usage_pct_min": 0.0,
+    "invalid_derived_soc6_rows": 0,
+    "mapped_rows": 7294,
+    "matched_rows": 7294,
+    "unmatched_rows": 0
+  },
+  "anthropic": {
+    "filtered_duplicate_key_rows": 0,
+    "filtered_occupations": 462,
+    "filtered_rows": 7294,
+    "filtered_states": 52,
+    "invalid_numeric_values": 0,
+    "out_of_range_values": 0,
+    "published_occupation_count_by_state": {
+      "AK": 10,
+      "AL": 82,
+      "AR": 45,
+      "AZ": 217,
+      "CA": 460,
+      "CO": 244,
+      "CT": 163,
+      "DC": 112,
+      "DE": 44,
+      "FL": 357,
+      "GA": 259,
+      "HI": 63,
+      "IA": 51,
+      "ID": 55,
+      "IL": 283,
+      "IN": 141,
+      "KS": 55,
+      "KY": 68,
+      "LA": 80,
+      "MA": 260,
+      "MD": 205,
+      "ME": 40,
+      "MI": 209,
+      "MN": 170,
+      "MO": 138,
+      "MS": 35,
+      "MT": 23,
+      "NC": 250,
+      "ND": 8,
+      "NE": 46,
+      "NH": 50,
+      "NJ": 247,
+      "NM": 40,
+      "NV": 132,
+      "NY": 372,
+      "OH": 207,
+      "OK": 85,
+      "OR": 160,
+      "PA": 253,
+      "PR": 60,
+      "RI": 46,
+      "SC": 95,
+      "SD": 11,
+      "TN": 153,
+      "TX": 379,
+      "UT": 141,
+      "VA": 253,
+      "VT": 19,
+      "WA": 273,
+      "WI": 122,
+      "WV": 17,
+      "WY": 6
+    },
+    "published_pct_sum_by_state": {
+      "AK": 31.25,
+      "AL": 74.68,
+      "AR": 61.15,
+      "AZ": 90.14,
+      "CA": 97.82,
+      "CO": 92.0,
+      "CT": 83.61,
+      "DC": 78.12,
+      "DE": 61.34,
+      "FL": 96.53,
+      "GA": 93.06,
+      "HI": 67.09,
+      "IA": 64.63,
+      "ID": 66.21,
+      "IL": 93.56,
+      "IN": 80.26,
+      "KS": 64.57,
+      "KY": 68.53,
+      "LA": 73.2,
+      "MA": 93.18,
+      "MD": 89.06,
+      "ME": 55.96,
+      "MI": 88.87,
+      "MN": 85.69,
+      "MO": 83.9,
+      "MS": 55.47,
+      "MT": 44.98,
+      "NC": 92.34,
+      "ND": 27.66,
+      "NE": 61.53,
+      "NH": 63.95,
+      "NJ": 92.13,
+      "NM": 58.41,
+      "NV": 83.83,
+      "NY": 96.65,
+      "OH": 89.55,
+      "OK": 74.84,
+      "OR": 85.44,
+      "PA": 92.64,
+      "PR": 65.55,
+      "RI": 62.66,
+      "SC": 77.67,
+      "SD": 32.15,
+      "TN": 86.5,
+      "TX": 96.77,
+      "UT": 85.32,
+      "VA": 92.68,
+      "VT": 41.56,
+      "WA": 93.42,
+      "WI": 81.53,
+      "WV": 40.17,
+      "WY": 22.11
+    },
+    "source_date_end_values": [
+      "2026-05-01",
+      "2026-06-01"
+    ],
+    "source_date_start_values": [
+      "2026-04-01",
+      "2026-05-01"
+    ],
+    "source_exact_duplicate_rows": 0,
+    "source_missing_by_column": {
+      "category_name": 0,
+      "date_end": 0,
+      "date_start": 0,
+      "geo_id": 0,
+      "geo_level": 0,
+      "hierarchy_level": 0,
+      "metric_id": 0,
+      "node_external_id": 0,
+      "node_name": 0,
+      "value": 0
+    },
+    "source_rows": 1636573
+  },
+  "bls_metropolitan": {
+    "duplicate_area_occupation_rows": 0,
+    "employment_suppressed_rows": 2924,
+    "filtered_detailed_rows": 141015,
+    "invalid_occ_code_rows": 0,
+    "multistate_msa_rows": 19164,
+    "numeric_missing_after_cleaning": {
+      "A_MEDIAN": 1907,
+      "JOBS_1000": 2924,
+      "LOC_QUOTIENT": 2924,
+      "TOT_EMP": 2924
+    },
+    "removed_non_detailed_or_non_cross_industry_rows": 9008,
+    "source_rows": 150023,
+    "wage_topcoded_rows": 208,
+    "wage_unavailable_rows": 1699
+  },
+  "bls_nonmetropolitan": {
+    "duplicate_area_occupation_rows": 0,
+    "employment_suppressed_rows": 755,
+    "filtered_detailed_rows": 45542,
+    "invalid_occ_code_rows": 0,
+    "multistate_msa_rows": 0,
+    "numeric_missing_after_cleaning": {
+      "A_MEDIAN": 466,
+      "JOBS_1000": 755,
+      "LOC_QUOTIENT": 755,
+      "TOT_EMP": 755
+    },
+    "removed_non_detailed_or_non_cross_industry_rows": 3147,
+    "source_rows": 48689,
+    "wage_topcoded_rows": 39,
+    "wage_unavailable_rows": 427
+  },
+  "final_merge": {
+    "bls_rows_before_merge": 186557,
+    "final_duplicate_key_rows": 0,
+    "final_rows": 186557,
+    "match_status_by_area_category": {
+      "metropolitan": {
+        "both": 40297,
+        "left_only": 100718
+      },
+      "nonmetropolitan": {
+        "both": 9569,
+        "left_only": 35973
+      }
+    },
+    "match_status_by_state": {
+      "AK": {
+        "both": 15,
+        "left_only": 971
+      },
+      "AL": {
+        "both": 565,
+        "left_only": 4065
+      },
+      "AR": {
+        "both": 183,
+        "left_only": 2727
+      },
+      "AZ": {
+        "both": 808,
+        "left_only": 1835
+      },
+      "CA": {
+        "both": 6460,
+        "left_only": 5387
+      },
+      "CO": {
+        "both": 1225,
+        "left_only": 2687
+      },
+      "CT": {
+        "both": 587,
+        "left_only": 1957
+      },
+      "DC": {
+        "both": 101,
+        "left_only": 612
+      },
+      "DE": {
+        "both": 43,
+        "left_only": 523
+      },
+      "FL": {
+        "both": 4065,
+        "left_only": 4989
+      },
+      "GA": {
+        "both": 1962,
+        "left_only": 3790
+      },
+      "GU": {
+        "both": 0,
+        "left_only": 220
+      },
+      "HI": {
+        "both": 94,
+        "left_only": 958
+      },
+      "IA": {
+        "both": 333,
+        "left_only": 3811
+      },
+      "ID": {
+        "both": 183,
+        "left_only": 2057
+      },
+      "IL": {
+        "both": 1624,
+        "left_only": 2536
+      },
+      "IN": {
+        "both": 967,
+        "left_only": 3972
+      },
+      "KS": {
+        "both": 152,
+        "left_only": 1630
+      },
+      "KY": {
+        "both": 332,
+        "left_only": 3002
+      },
+      "LA": {
+        "both": 436,
+        "left_only": 3585
+      },
+      "MA": {
+        "both": 956,
+        "left_only": 1685
+      },
+      "MD": {
+        "both": 520,
+        "left_only": 1344
+      },
+      "ME": {
+        "both": 115,
+        "left_only": 1607
+      },
+      "MI": {
+        "both": 1844,
+        "left_only": 4601
+      },
+      "MN": {
+        "both": 788,
+        "left_only": 2509
+      },
+      "MO": {
+        "both": 909,
+        "left_only": 3476
+      },
+      "MS": {
+        "both": 120,
+        "left_only": 2354
+      },
+      "MT": {
+        "both": 86,
+        "left_only": 2098
+      },
+      "NC": {
+        "both": 2312,
+        "left_only": 4771
+      },
+      "ND": {
+        "both": 27,
+        "left_only": 1651
+      },
+      "NE": {
+        "both": 152,
+        "left_only": 2012
+      },
+      "NH": {
+        "both": 100,
+        "left_only": 1218
+      },
+      "NJ": {
+        "both": 363,
+        "left_only": 692
+      },
+      "NM": {
+        "both": 113,
+        "left_only": 1790
+      },
+      "NV": {
+        "both": 285,
+        "left_only": 1349
+      },
+      "NY": {
+        "both": 3105,
+        "left_only": 3412
+      },
+      "OH": {
+        "both": 1825,
+        "left_only": 4766
+      },
+      "OK": {
+        "both": 378,
+        "left_only": 2467
+      },
+      "OR": {
+        "both": 863,
+        "left_only": 2972
+      },
+      "PA": {
+        "both": 2503,
+        "left_only": 5048
+      },
+      "PR": {
+        "both": 142,
+        "left_only": 1346
+      },
+      "RI": {
+        "both": 42,
+        "left_only": 566
+      },
+      "SC": {
+        "both": 537,
+        "left_only": 3223
+      },
+      "SD": {
+        "both": 22,
+        "left_only": 1367
+      },
+      "TN": {
+        "both": 1128,
+        "left_only": 4052
+      },
+      "TX": {
+        "both": 5606,
+        "left_only": 5903
+      },
+      "UT": {
+        "both": 575,
+        "left_only": 2072
+      },
+      "VA": {
+        "both": 1531,
+        "left_only": 2882
+      },
+      "VI": {
+        "both": 0,
+        "left_only": 161
+      },
+      "VT": {
+        "both": 38,
+        "left_only": 1024
+      },
+      "WA": {
+        "both": 1571,
+        "left_only": 2785
+      },
+      "WI": {
+        "both": 1105,
+        "left_only": 4683
+      },
+      "WV": {
+        "both": 59,
+        "left_only": 2406
+      },
+      "WY": {
+        "both": 11,
+        "left_only": 1085
+      }
+    },
+    "matched_rows": 49866,
+    "nonmissing_metric_counts": {
+      "A_MEDIAN": 184184,
+      "JOBS_1000": 182878,
+      "LOC_QUOTIENT": 182878,
+      "TOT_EMP": 182878,
+      "claude_usage_pct": 49866
+    },
+    "unmatched_bls_rows": 136691
+  },
+  "onet": {
+    "duplicate_code_rows": 0,
+    "invalid_code_rows": 0,
+    "missing_by_column": {
+      "onet_description": 0,
+      "onet_soc_code": 0,
+      "onet_title": 0
+    },
+    "source_rows": 1016
+  },
+  "outputs": {
+    "ai_state_soc6": "data/processed/ai_state_soc6.csv",
+    "area_occupation_clean": "data/processed/area_occupation_clean.csv",
+    "audit": "reports/cleaning_audit.json",
+    "record_checks": "reports/record_checks.csv",
+    "sample": "data/sample/area_occupation_sample.csv"
+  },
+  "record_checks": {
+    "passed": 5,
+    "rows": 5
+  },
+  "rules": {
+    "anthropic_filters": {
+      "category_name": "soc_occupation",
+      "geo_id": "US-XX",
+      "geo_level": "subregion",
+      "hierarchy_level": "0",
+      "metric_id": "pct"
+    },
+    "anthropic_period": [
+      "2026-05-01",
+      "2026-06-01"
+    ],
+    "bls_filters": {
+      "I_GROUP": "cross-industry",
+      "NAICS": "000000",
+      "OWN_CODE": "1235",
+      "O_GROUP": "detailed"
+    },
+    "final_key": [
+      "area_category",
+      "AREA",
+      "OCC_CODE"
+    ]
+  },
+  "sample": {
+    "area_category_counts": {
+      "metropolitan": 42,
+      "nonmetropolitan": 8
+    },
+    "employment_suppressed_rows": 9,
+    "matched_rows": 29,
+    "multistate_msa_rows": 9,
+    "rows": 50,
+    "unmatched_rows": 21,
+    "wage_topcoded_rows": 8
+  },
+  "source_files": {
+    "anthropic": {
+      "bytes": 219174671,
+      "filename": "aei_claude_ai_2026-06-26.csv"
+    },
+    "bos": {
+      "bytes": 9891462,
+      "filename": "BOS_M2025_dl.xlsx"
+    },
+    "msa": {
+      "bytes": 30628700,
+      "filename": "MSA_M2025_dl.xlsx"
+    },
+    "onet": {
+      "bytes": 102540,
+      "filename": "Occupation Data (1).xlsx"
+    }
+  }
+}

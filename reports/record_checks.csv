@@ -1,0 +1,6 @@
+check_id,title,original,expected,actual,passed
+1,Direct occupation mapping,US-CA; 27-1014.00; pct=0.03,Exact O*NET match; state=CA; soc6=27-1014; value remains 0.03,title=Special Effects Artists and Animators; state=CA; value=0.03,True
+2,Aggregate multiple O*NET extensions,US-CA 11-3031.00=0.13; 11-3031.01=0.10; 11-3031.03=0.18,claude_usage_pct=0.41; onet_occupation_count=3,claude_usage_pct=0.41; onet_occupation_count=3,True
+3,Suppressed BLS employment,MSA AREA=10180; OCC_CODE=13-1031; TOT_EMP=**,TOT_EMP missing; employment_suppressed=True; row retained,TOT_EMP=<NA>; employment_suppressed=True,True
+4,Top-coded BLS annual wage,MSA AREA=10540; OCC_CODE=29-1215; A_MEDIAN=#,A_MEDIAN missing; wage_topcoded=True; row retained,A_MEDIAN=<NA>; wage_topcoded=True,True
+5,State + occupation cross-source lookup,MSA AREA=12540; CA; OCC_CODE=13-2011; Anthropic pct=0.11,BLS values retained; claude_usage_pct=0.11; merge status both,state=CA; claude_usage_pct=0.11; merge=both,True

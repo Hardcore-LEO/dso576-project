@@ -1,0 +1,12 @@
+[project]
+name = "dso576-project-cleaning"
+version = "0.1.0"
+description = "Reproducible data cleaning for the AI Workforce Investment Planner"
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=6,<8",
+    "nbclient>=0.10,<1",
+    "nbformat>=5,<6",
+    "openpyxl==3.1.5",
+    "pandas==2.2.3",
+]

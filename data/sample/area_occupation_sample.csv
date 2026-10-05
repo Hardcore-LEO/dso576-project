@@ -1,0 +1,51 @@
+area_category,AREA,AREA_TITLE,PRIM_STATE,OCC_CODE,OCC_TITLE,TOT_EMP_raw,TOT_EMP,employment_suppressed,A_MEDIAN_raw,A_MEDIAN,wage_unavailable,wage_topcoded,JOBS_1000,LOC_QUOTIENT,is_multistate_msa,claude_usage_pct,onet_occupation_count,ai_merge_status
+metropolitan,10180,"Abilene, TX",TX,13-1031,"Claims Adjusters, Examiners, and Investigators",**,,True,35580,35580,False,False,,,False,0.02,1.0,both
+metropolitan,10380,"Aguadilla, PR",PR,15-1211,Computer Systems Analysts,**,,True,72900,72900,False,False,,,False,1.54,1.0,both
+metropolitan,10380,"Aguadilla, PR",PR,49-2022,"Telecommunications Equipment Installers and Repairers, Except Line Installers",**,,True,27190,27190,False,False,,,False,,,left_only
+metropolitan,10420,"Akron, OH",OH,19-2043,Hydrologists,**,,True,99470,99470,False,False,,,False,,,left_only
+metropolitan,10420,"Akron, OH",OH,25-3011,"Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors",**,,True,37440,37440,False,False,,,False,,,left_only
+metropolitan,10420,"Akron, OH",OH,49-2095,"Electrical and Electronics Repairers, Powerhouse, Substation, and Relay",**,,True,64120,64120,False,False,,,False,,,left_only
+metropolitan,10420,"Akron, OH",OH,49-2096,"Electronic Equipment Installers and Repairers, Motor Vehicles",**,,True,44230,44230,False,False,,,False,,,left_only
+metropolitan,10500,"Albany, GA",GA,21-1023,Mental Health and Substance Abuse Social Workers,**,,True,39980,39980,False,False,,,False,,,left_only
+metropolitan,10540,"Albany, OR",OR,29-1215,Family Medicine Physicians,50,50,False,#,,False,True,1.003,1.45,False,,,left_only
+metropolitan,10580,"Albany-Schenectady-Troy, NY",NY,29-1151,Nurse Anesthetists,170,170,False,#,,False,True,0.388,1.16,False,,,left_only
+metropolitan,10740,"Albuquerque, NM",NM,29-1212,Cardiologists,70,70,False,#,,False,True,0.183,1.64,False,0.93,1.0,both
+metropolitan,10900,"Allentown-Bethlehem-Easton, PA-NJ",PA,29-1224,Radiologists,**,,True,#,,False,True,,,True,,,left_only
+metropolitan,11260,"Anchorage, AK",AK,29-1211,Anesthesiologists,110,110,False,#,,False,True,0.621,2.49,False,,,left_only
+metropolitan,11260,"Anchorage, AK",AK,29-1249,"Surgeons, All Other",50,50,False,#,,False,True,0.26,1.61,False,,,left_only
+metropolitan,11460,"Ann Arbor, MI",MI,29-1151,Nurse Anesthetists,290,290,False,#,,False,True,1.312,3.93,False,,,left_only
+metropolitan,11700,"Asheville, NC",NC,29-1211,Anesthesiologists,80,80,False,#,,False,True,0.43,1.73,False,,,left_only
+metropolitan,10180,"Abilene, TX",TX,11-9021,Construction Managers,190,190,False,89050,89050,False,False,2.544,1.04,False,,,left_only
+metropolitan,10180,"Abilene, TX",TX,11-9039,"Education Administrators, All Other",40,40,False,79610,79610,False,False,0.585,1.65,False,,,left_only
+metropolitan,10180,"Abilene, TX",TX,11-9141,"Property, Real Estate, and Community Association Managers",170,170,False,49460,49460,False,False,2.299,1.15,False,,,left_only
+metropolitan,10180,"Abilene, TX",TX,13-1020,Buyers and Purchasing Agents,140,140,False,64480,64480,False,False,1.822,0.58,False,,,left_only
+metropolitan,10180,"Abilene, TX",TX,13-1051,Cost Estimators,80,80,False,63630,63630,False,False,1.111,0.77,False,,,left_only
+metropolitan,10180,"Abilene, TX",TX,13-1141,"Compensation, Benefits, and Job Analysis Specialists",30,30,False,60570,60570,False,False,0.464,0.64,False,,,left_only
+metropolitan,10180,"Abilene, TX",TX,13-2020,Property Appraisers and Assessors,40,40,False,61700,61700,False,False,0.551,1.5,False,,,left_only
+metropolitan,10180,"Abilene, TX",TX,17-2071,Electrical Engineers,50,50,False,106340,106340,False,False,0.671,0.53,False,,,left_only
+metropolitan,10900,"Allentown-Bethlehem-Easton, PA-NJ",PA,11-1011,Chief Executives,400,400,False,279080,279080,False,False,1.074,0.82,True,0.14,1.0,both
+metropolitan,10900,"Allentown-Bethlehem-Easton, PA-NJ",PA,11-1021,General and Operations Managers,8730,8730,False,101260,101260,False,False,23.151,1.03,True,0.17,1.0,both
+metropolitan,10900,"Allentown-Bethlehem-Easton, PA-NJ",PA,11-2011,Advertising and Promotions Managers,90,90,False,121490,121490,False,False,0.24,1.74,True,0.52,1.0,both
+metropolitan,10900,"Allentown-Bethlehem-Easton, PA-NJ",PA,11-2021,Marketing Managers,690,690,False,153930,153930,False,False,1.837,0.72,True,0.49,1.0,both
+metropolitan,10900,"Allentown-Bethlehem-Easton, PA-NJ",PA,11-2022,Sales Managers,1310,1310,False,135220,135220,False,False,3.469,0.85,True,0.12,1.0,both
+metropolitan,10900,"Allentown-Bethlehem-Easton, PA-NJ",PA,11-2032,Public Relations Managers,90,90,False,126820,126820,False,False,0.249,0.52,True,0.11,1.0,both
+metropolitan,10900,"Allentown-Bethlehem-Easton, PA-NJ",PA,11-2033,Fundraising Managers,100,100,False,112110,112110,False,False,0.266,1.07,True,0.04,1.0,both
+metropolitan,10900,"Allentown-Bethlehem-Easton, PA-NJ",PA,11-3012,Administrative Services Managers,280,280,False,120560,120560,False,False,0.749,0.44,True,0.14,1.0,both
+nonmetropolitan,0100001,Northwest Alabama nonmetropolitan area,AL,11-3021,Computer and Information Systems Managers,60,60,False,123390,123390,False,False,0.85,0.2,False,0.51,1.0,both
+nonmetropolitan,0100001,Northwest Alabama nonmetropolitan area,AL,11-3051,Industrial Production Managers,220,220,False,102780,102780,False,False,3.29,2.08,False,0.39,1.0,both
+nonmetropolitan,0100001,Northwest Alabama nonmetropolitan area,AL,11-9033,"Education Administrators, Postsecondary",50,50,False,103890,103890,False,False,0.746,0.64,False,0.41,1.0,both
+nonmetropolitan,0100001,Northwest Alabama nonmetropolitan area,AL,13-1161,Market Research Analysts and Marketing Specialists,140,140,False,52390,52390,False,False,2.04,0.35,False,0.27,1.0,both
+nonmetropolitan,0100001,Northwest Alabama nonmetropolitan area,AL,13-1199,"Business Operations Specialists, All Other",30,30,False,97070,97070,False,False,0.499,0.07,False,0.67,1.0,both
+nonmetropolitan,0100001,Northwest Alabama nonmetropolitan area,AL,13-2051,Financial and Investment Analysts,50,50,False,88170,88170,False,False,0.739,0.32,False,0.18,1.0,both
+nonmetropolitan,0100001,Northwest Alabama nonmetropolitan area,AL,15-1211,Computer Systems Analysts,60,60,False,88990,88990,False,False,0.86,0.26,False,2.19,1.0,both
+nonmetropolitan,0100001,Northwest Alabama nonmetropolitan area,AL,15-1232,Computer User Support Specialists,110,110,False,48540,48540,False,False,1.624,0.35,False,1.92,1.0,both
+metropolitan,10180,"Abilene, TX",TX,11-1011,Chief Executives,40,40,False,165770,165770,False,False,0.542,0.41,False,0.15,1.0,both
+metropolitan,10180,"Abilene, TX",TX,11-1021,General and Operations Managers,2120,2120,False,86200,86200,False,False,28.241,1.25,False,0.19,1.0,both
+metropolitan,10180,"Abilene, TX",TX,11-2021,Marketing Managers,140,140,False,109100,109100,False,False,1.848,0.73,False,0.49,1.0,both
+metropolitan,10180,"Abilene, TX",TX,11-2022,Sales Managers,280,280,False,111020,111020,False,False,3.694,0.9,False,0.16,1.0,both
+metropolitan,10180,"Abilene, TX",TX,11-2032,Public Relations Managers,40,40,False,93710,93710,False,False,0.53,1.1,False,0.13,1.0,both
+metropolitan,10180,"Abilene, TX",TX,11-3012,Administrative Services Managers,120,120,False,103710,103710,False,False,1.545,0.91,False,0.19,1.0,both
+metropolitan,10180,"Abilene, TX",TX,11-3013,Facilities Managers,70,70,False,81410,81410,False,False,0.902,0.9,False,0.04,1.0,both
+metropolitan,10180,"Abilene, TX",TX,11-3021,Computer and Information Systems Managers,120,120,False,135670,135670,False,False,1.653,0.38,False,0.49,1.0,both
+metropolitan,10180,"Abilene, TX",TX,13-2011,Accountants and Auditors,550,550,False,75410,75410,False,False,7.272,0.78,False,0.13,1.0,both
+metropolitan,10180,"Abilene, TX",TX,29-1215,Family Medicine Physicians,40,40,False,220400,220400,False,False,0.513,0.74,False,0.03,1.0,both
