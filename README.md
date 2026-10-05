@@ -7,9 +7,9 @@ This branch contains Yunyi Zhang's individual Module 6 project-data-cleaning wor
 - Student: Yunyi Zhang
 - Branch: `yoona-zhang`
 - Branch URL: https://github.com/Hardcore-LEO/dso576-project/tree/yoona-zhang
-- Commit ID: `TO_BE_ADDED_AFTER_THE_SUBMISSION_COMMIT`
+- Validated cleaning commit ID: `af4172162db67e9ce66fc537a012a28200619039`
 
-The commit ID placeholder must be replaced after the files below are committed. Do not merge this homework branch into `main`.
+This commit contains the tested cleaning workflow, notebook, sample, audit, record checks, dependencies, and documentation. Do not merge this homework branch into `main`.
 
 ## Source data and versions
 
