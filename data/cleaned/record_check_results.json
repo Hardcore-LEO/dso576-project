@@ -1,0 +1,97 @@
+[
+  {
+    "source": "MSA_M2025_dl.xlsx",
+    "area": "12540",
+    "soc": "29-1214",
+    "field": "a_median",
+    "original": "#",
+    "expected": {
+      "value": null,
+      "status": "top_coded_lower_bound",
+      "lower_bound": 239200
+    },
+    "reason": "The workbook defines # as a lower bound, not an exact wage.",
+    "actual": {
+      "value": null,
+      "status": "top_coded_lower_bound",
+      "lower_bound": 239200.0
+    },
+    "matches": true
+  },
+  {
+    "source": "MSA_M2025_dl.xlsx",
+    "area": "12540",
+    "soc": "13-2082",
+    "field": "tot_emp",
+    "original": "**",
+    "expected": {
+      "value": null,
+      "status": "employment_not_available",
+      "lower_bound": null
+    },
+    "reason": "The workbook defines ** as unavailable employment, not zero.",
+    "actual": {
+      "value": null,
+      "status": "employment_not_available",
+      "lower_bound": null
+    },
+    "matches": true
+  },
+  {
+    "source": "MSA_M2025_dl.xlsx",
+    "area": "12540",
+    "soc": "15-1243",
+    "field": "a_median",
+    "original": "*",
+    "expected": {
+      "value": null,
+      "status": "wage_not_available",
+      "lower_bound": null
+    },
+    "reason": "The workbook defines * as an unavailable wage, not zero.",
+    "actual": {
+      "value": null,
+      "status": "wage_not_available",
+      "lower_bound": null
+    },
+    "matches": true
+  },
+  {
+    "source": "BOS_M2025_dl.xlsx",
+    "area": "0600003",
+    "soc": "11-1011",
+    "field": "area_code",
+    "original": "0600003",
+    "expected": {
+      "value": "0600003"
+    },
+    "reason": "Area identifiers must keep leading zeros.",
+    "actual": {
+      "value": "0600003"
+    },
+    "matches": true
+  },
+  {
+    "source": "aei_claude_ai_2026-06-26.csv",
+    "key": {
+      "date_start": "2026-05-01",
+      "date_end": "2026-06-01",
+      "geo_id": "GLOBAL",
+      "geo_level": "global",
+      "category_name": "soc_occupation",
+      "hierarchy_level": "0",
+      "metric_id": "use_case_work_pct",
+      "node_external_id": "49-9021.00"
+    },
+    "field": "value",
+    "original": "42.24",
+    "expected": {
+      "value": 42.24
+    },
+    "reason": "Convert the numeric type while preserving the published percentage.",
+    "actual": {
+      "value": 42.24
+    },
+    "matches": true
+  }
+]

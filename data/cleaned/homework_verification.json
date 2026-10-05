@@ -1,0 +1,11 @@
+{
+  "matched_output_files": 27,
+  "changed_output_files": [],
+  "source_hashes_unchanged": true,
+  "sample_rows": 20,
+  "record_checks_passed": 5,
+  "ca_employment_sum": 17277510.0,
+  "ca_employment_nonmissing": 11632,
+  "ca_exact_median_wage_nonmissing": 11678,
+  "ca_work_use_context_nonmissing": 9296
+}

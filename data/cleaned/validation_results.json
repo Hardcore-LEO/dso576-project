@@ -1,0 +1,191 @@
+{
+  "status": "passed",
+  "passed_checks": 46,
+  "source_files_rehashed": true,
+  "checks": [
+    {
+      "check": "Complete AEI rows reconcile",
+      "passed": true
+    },
+    {
+      "check": "Complete BLS rows reconcile",
+      "passed": true
+    },
+    {
+      "check": "Dictionary rows reconcile",
+      "passed": true
+    },
+    {
+      "check": "Full BLS key unique",
+      "passed": true
+    },
+    {
+      "check": "Full AEI key unique",
+      "passed": true
+    },
+    {
+      "check": "CA key unique",
+      "passed": true
+    },
+    {
+      "check": "No employment multiplication",
+      "passed": true
+    },
+    {
+      "check": "Every tot_emp survives joins unchanged",
+      "passed": true
+    },
+    {
+      "check": "Every a_median survives joins unchanged",
+      "passed": true
+    },
+    {
+      "check": "No occupation totals included",
+      "passed": true
+    },
+    {
+      "check": "Nonmetro leading zeros survive",
+      "passed": true
+    },
+    {
+      "check": "a_mean top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "a_pct10 top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "a_pct25 top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "a_median top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "a_pct75 top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "a_pct90 top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "h_mean top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "h_pct10 top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "h_pct25 top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "h_median top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "h_pct75 top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "h_pct90 top coding preserved",
+      "passed": true
+    },
+    {
+      "check": "All source AI percentages within bounds",
+      "passed": true
+    },
+    {
+      "check": "Both original months retained",
+      "passed": true
+    },
+    {
+      "check": "No false local occupation work-use measurements",
+      "passed": true
+    },
+    {
+      "check": "Independent work-use min",
+      "passed": true
+    },
+    {
+      "check": "Independent work-use max",
+      "passed": true
+    },
+    {
+      "check": "Independent work-use n_extensions",
+      "passed": true
+    },
+    {
+      "check": "Context missingness flags consistent",
+      "passed": true
+    },
+    {
+      "check": "No fabricated importance/exposure/priority",
+      "passed": true
+    },
+    {
+      "check": "Unpublished month not filled with zero",
+      "passed": true
+    },
+    {
+      "check": "Month changes arithmetic",
+      "passed": true
+    },
+    {
+      "check": "occupation_area CSV row count",
+      "passed": true
+    },
+    {
+      "check": "occupation_area CSV area_code",
+      "passed": true
+    },
+    {
+      "check": "occupation_area CSV soc_code",
+      "passed": true
+    },
+    {
+      "check": "occupations CSV row count",
+      "passed": true
+    },
+    {
+      "check": "occupations CSV soc_code",
+      "passed": true
+    },
+    {
+      "check": "occupations CSV onet_soc_code",
+      "passed": true
+    },
+    {
+      "check": "occupation_ai_by_scope CSV row count",
+      "passed": true
+    },
+    {
+      "check": "occupation_ai_by_scope CSV soc_code",
+      "passed": true
+    },
+    {
+      "check": "occupation_ai_by_scope CSV onet_soc_code",
+      "passed": true
+    },
+    {
+      "check": "aei_claude_ai_2026-06-26.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "BOS_M2025_dl.xlsx unchanged",
+      "passed": true
+    },
+    {
+      "check": "MSA_M2025_dl.xlsx unchanged",
+      "passed": true
+    },
+    {
+      "check": "Occupation Data.xlsx unchanged",
+      "passed": true
+    }
+  ]
+}

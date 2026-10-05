@@ -1,0 +1,231 @@
+{
+  "BOS_M2025_dl.xlsx": {
+    "input_rows": 48689,
+    "clean_rows": 48689,
+    "exact_duplicates_removed": 0,
+    "occupation_levels": {
+      "detailed": 45542,
+      "major": 3010,
+      "total": 137
+    },
+    "numeric_status_counts": {
+      "tot_emp": {
+        "reported": 47929,
+        "employment_not_available": 760
+      },
+      "emp_prse": {
+        "reported": 47929,
+        "employment_not_available": 760
+      },
+      "jobs_1000": {
+        "reported": 47929,
+        "employment_not_available": 760
+      },
+      "loc_quotient": {
+        "reported": 47929,
+        "employment_not_available": 760
+      },
+      "pct_total": {
+        "blank_not_available": 48689
+      },
+      "pct_rpt": {
+        "blank_not_available": 48689
+      },
+      "h_mean": {
+        "reported": 45698,
+        "wage_not_available": 2952,
+        "top_coded_lower_bound": 39
+      },
+      "a_mean": {
+        "reported": 48215,
+        "wage_not_available": 435,
+        "top_coded_lower_bound": 39
+      },
+      "mean_prse": {
+        "reported": 48265,
+        "wage_not_available": 424
+      },
+      "h_pct10": {
+        "reported": 45698,
+        "wage_not_available": 2952,
+        "top_coded_lower_bound": 39
+      },
+      "h_pct25": {
+        "reported": 45698,
+        "wage_not_available": 2952,
+        "top_coded_lower_bound": 39
+      },
+      "h_median": {
+        "reported": 45698,
+        "wage_not_available": 2952,
+        "top_coded_lower_bound": 39
+      },
+      "h_pct75": {
+        "reported": 45698,
+        "wage_not_available": 2952,
+        "top_coded_lower_bound": 39
+      },
+      "h_pct90": {
+        "reported": 45697,
+        "wage_not_available": 2952,
+        "top_coded_lower_bound": 40
+      },
+      "a_pct10": {
+        "reported": 48215,
+        "wage_not_available": 435,
+        "top_coded_lower_bound": 39
+      },
+      "a_pct25": {
+        "reported": 48215,
+        "wage_not_available": 435,
+        "top_coded_lower_bound": 39
+      },
+      "a_median": {
+        "reported": 48215,
+        "wage_not_available": 435,
+        "top_coded_lower_bound": 39
+      },
+      "a_pct75": {
+        "reported": 48215,
+        "wage_not_available": 435,
+        "top_coded_lower_bound": 39
+      },
+      "a_pct90": {
+        "reported": 48214,
+        "wage_not_available": 435,
+        "top_coded_lower_bound": 40
+      }
+    }
+  },
+  "MSA_M2025_dl.xlsx": {
+    "input_rows": 150023,
+    "clean_rows": 150023,
+    "exact_duplicates_removed": 0,
+    "occupation_levels": {
+      "detailed": 141015,
+      "major": 8615,
+      "total": 393
+    },
+    "numeric_status_counts": {
+      "tot_emp": {
+        "reported": 147084,
+        "employment_not_available": 2939
+      },
+      "emp_prse": {
+        "reported": 147084,
+        "employment_not_available": 2939
+      },
+      "jobs_1000": {
+        "reported": 147084,
+        "employment_not_available": 2939
+      },
+      "loc_quotient": {
+        "reported": 147084,
+        "employment_not_available": 2939
+      },
+      "pct_total": {
+        "blank_not_available": 150023
+      },
+      "pct_rpt": {
+        "blank_not_available": 150023
+      },
+      "h_mean": {
+        "reported": 140525,
+        "wage_not_available": 9291,
+        "top_coded_lower_bound": 207
+      },
+      "a_mean": {
+        "reported": 148102,
+        "wage_not_available": 1714,
+        "top_coded_lower_bound": 207
+      },
+      "mean_prse": {
+        "reported": 148498,
+        "wage_not_available": 1525
+      },
+      "h_pct10": {
+        "reported": 140525,
+        "wage_not_available": 9291,
+        "top_coded_lower_bound": 207
+      },
+      "h_pct25": {
+        "reported": 140525,
+        "wage_not_available": 9291,
+        "top_coded_lower_bound": 207
+      },
+      "h_median": {
+        "reported": 140524,
+        "wage_not_available": 9291,
+        "top_coded_lower_bound": 208
+      },
+      "h_pct75": {
+        "reported": 140524,
+        "wage_not_available": 9291,
+        "top_coded_lower_bound": 208
+      },
+      "h_pct90": {
+        "reported": 140522,
+        "wage_not_available": 9291,
+        "top_coded_lower_bound": 210
+      },
+      "a_pct10": {
+        "reported": 148102,
+        "wage_not_available": 1714,
+        "top_coded_lower_bound": 207
+      },
+      "a_pct25": {
+        "reported": 148102,
+        "wage_not_available": 1714,
+        "top_coded_lower_bound": 207
+      },
+      "a_median": {
+        "reported": 148101,
+        "wage_not_available": 1714,
+        "top_coded_lower_bound": 208
+      },
+      "a_pct75": {
+        "reported": 148101,
+        "wage_not_available": 1714,
+        "top_coded_lower_bound": 208
+      },
+      "a_pct90": {
+        "reported": 148097,
+        "wage_not_available": 1714,
+        "top_coded_lower_bound": 212
+      }
+    }
+  },
+  "Occupation Data.xlsx": {
+    "input_rows": 1016,
+    "clean_rows": 1016,
+    "exact_duplicates_removed": 0
+  },
+  "aei_claude_ai_2026-06-26.csv": {
+    "input_rows": 1636573,
+    "clean_rows": 1636573,
+    "exact_duplicates_removed": 0,
+    "period_rows": {
+      "2026-05-01": 892804,
+      "2026-04-01": 743769
+    },
+    "category_rows": {
+      "onet": 744544,
+      "request": 465202,
+      "soc_occupation": 353817,
+      "overall": 73010
+    }
+  },
+  "results": {
+    "ca_rows": 11847,
+    "ca_areas": 28,
+    "ca_socs": 783,
+    "global_context_cells": 9296,
+    "ca_socs_without_global_context": 215,
+    "dictionary_rows": 1016,
+    "dictionary_parent_socs": 867,
+    "ai_full_codes_absent_from_dictionary": 0,
+    "ca_socs_without_dictionary_match": 12,
+    "latest_period": "2026-05-01",
+    "source_hashes_unchanged": true
+  }
+}

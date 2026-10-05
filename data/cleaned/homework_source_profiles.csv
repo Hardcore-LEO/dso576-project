@@ -1,0 +1,5 @@
+source,rows,exact_duplicates,repeated_full_keys,repeated_single_ids_after_first,trimmed_text_cells
+aei_claude_ai_2026-06-26.csv,1636573,0,0,1630763,0
+BOS_M2025_dl.xlsx,48689,0,0,47915,0
+MSA_M2025_dl.xlsx,150023,0,0,149176,0
+Occupation Data.xlsx,1016,0,0,0,0

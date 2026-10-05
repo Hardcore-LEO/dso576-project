@@ -1,0 +1,22 @@
+[
+  {
+    "file": "aei_claude_ai_2026-06-26.csv",
+    "bytes": 219174671,
+    "sha256": "f974b358bce0e5a8417510c61da4342234cd0de9d9d0b62acf4c6dbcf8ec7b68"
+  },
+  {
+    "file": "BOS_M2025_dl.xlsx",
+    "bytes": 9891462,
+    "sha256": "2a06fc23e9c3d487d767b76f0efa749252f4ad55f745640064845aa2c4b1aa1b"
+  },
+  {
+    "file": "MSA_M2025_dl.xlsx",
+    "bytes": 30628700,
+    "sha256": "faf00eee127763c8c082d8fb862717ef2ad3a75f16f8975dc1e70935f27bcbb0"
+  },
+  {
+    "file": "Occupation Data.xlsx",
+    "bytes": 102540,
+    "sha256": "13b2aa4c08e6c9a3708d5e5ac83e13da5cc184e3798313c8942a266d00593ace"
+  }
+]
