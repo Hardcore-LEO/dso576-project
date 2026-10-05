@@ -37,7 +37,7 @@ def build_notebook():
             **Student:** Hehua (Leo) Liu - confirmation pending  
             **Branch:** `Leo`  
             **Branch URL:** [https://github.com/Hardcore-LEO/dso576-project/tree/Leo](https://github.com/Hardcore-LEO/dso576-project/tree/Leo)  
-            **Submitted commit:** Not yet submitted
+            **Submitted commit:** `4993964fc785f73b9c518b49223af6b6d6192f68`
 
             **Business question:** The Executive Director of the California Workforce Development Board must decide which California occupation × region combinations should be prioritized for AI upskilling and workforce-transition support.
 

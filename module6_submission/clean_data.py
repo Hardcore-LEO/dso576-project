@@ -1065,7 +1065,11 @@ def build_report(validation, record_checks, stage_rows):
     )
     report = f"""# DSO 576 Module 6 - Project Data Cleaning
 
-Project: California AI Upskilling and Workforce-Transition Screening Shortlist  
+Project: AI Workforce Investment Planner  
+Student: Hehua (Leo) Liu - confirmation pending  
+Branch: Leo  
+Branch URL: https://github.com/Hardcore-LEO/dso576-project/tree/Leo  
+Submitted commit: 4993964fc785f73b9c518b49223af6b6d6192f68  
 Business question: Which California occupation x region combinations should be prioritized for AI upskilling and workforce-transition support?
 
 The user selects a California region and reviews occupations using observed AI exposure, employment, wages, and labor-market outlook. The result is a screening shortlist for human review. It is not an automatic funding or automation decision.
