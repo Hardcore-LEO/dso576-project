@@ -1,6 +1,6 @@
 # AI Workforce Investment Planner
 
-**Student:** Hehua (Leo) Liu - confirmation pending  
+**Student:** Hehua (Leo) Liu
 **Branch:** `Leo`  
 **Branch URL:** [https://github.com/Hardcore-LEO/dso576-project/tree/Leo](https://github.com/Hardcore-LEO/dso576-project/tree/Leo)  
 **Submitted commit:** `4993964fc785f73b9c518b49223af6b6d6192f68`
