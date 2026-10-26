@@ -1,0 +1,66 @@
+{
+  "prepared_before_cleaning": true,
+  "author": "Codex; student review pending",
+  "checks": [
+    {
+      "id": "R1",
+      "source_file": "job_exposure.csv",
+      "source_sheet": "",
+      "source_row": 5,
+      "field": "occ_code",
+      "original": "Nov-11",
+      "expected": "Nov-11",
+      "expected_status_field": "code_join_eligible",
+      "expected_status": false,
+      "reason": "The date-like value is not a valid six-digit SOC code. Preserve it and do not guess a repair."
+    },
+    {
+      "id": "R2",
+      "source_file": "aei_claude_ai_2026-06-26.csv",
+      "source_sheet": "",
+      "source_row": 396056,
+      "field": "value",
+      "original": "199.11",
+      "expected": 199.11,
+      "expected_status_field": "suspicious_value",
+      "expected_status": false,
+      "reason": "A value above 100 is valid for a time metric; a global percentage rule would be wrong."
+    },
+    {
+      "id": "R3",
+      "source_file": "BOS_M2025_dl.xlsx",
+      "source_sheet": "BOS_M2025_dl",
+      "source_row": 15,
+      "field": "TOT_EMP",
+      "original": "**",
+      "expected": null,
+      "expected_status_field": "TOT_EMP__status",
+      "expected_status": "employment_estimate_unavailable",
+      "reason": "Unavailable employment is unknown, not zero."
+    },
+    {
+      "id": "R4",
+      "source_file": "BOS_M2025_dl.xlsx",
+      "source_sheet": "BOS_M2025_dl",
+      "source_row": 1711,
+      "field": "H_MEAN",
+      "original": "#",
+      "expected": null,
+      "expected_status_field": "H_MEAN__status",
+      "expected_status": "censored_exact_value_unavailable",
+      "reason": "A censored wage is not an exact value and must not be imputed."
+    },
+    {
+      "id": "R5",
+      "source_file": "occupation.XLSX",
+      "source_sheet": "Table 1.5",
+      "source_row": 4,
+      "field": "Employment change, percent, 2025–35",
+      "original": "-34.4",
+      "expected": -34.4,
+      "expected_status_field": "",
+      "expected_status": null,
+      "reason": "Negative projected growth is meaningful and must remain negative."
+    }
+  ]
+}
