@@ -1,0 +1,15 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local environment variables and Streamlit secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

@@ -3,13 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Offline AI Workforce Investment Planner, using the supplied California workforce workbook and fixed v1.0 scores.">
+<meta name="description" content="Explore California workforce transition priorities using transparent screening scores and regional data.">
 <title>AI Workforce Investment Planner</title>
 <style>
 :root{color-scheme:light;--ink:#182f43;--muted:#536a7d;--teal:#007f78;--border:#d9e3eb}
 *{box-sizing:border-box}body{margin:0;background:#f7f9fc;color:var(--ink);font:15px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:1440px;margin:auto;padding:48px 40px 60px}h1{font-size:44px;line-height:1.15;letter-spacing:-1.6px;margin:20px 0}h2{font-size:25px;letter-spacing:-.5px;margin:0 0 20px}section{margin-top:48px}p{margin:12px 0}.eyebrow{color:var(--teal);font-size:12px;font-weight:750;letter-spacing:2px}.subtitle{font-size:19px;color:var(--muted);max-width:900px}.pill{display:inline-block;padding:5px 12px;border:1px solid #c9dbdf;border-radius:24px;font-size:12px;margin:8px 8px 0 0}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.metric{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px}.metric span{font-size:13px;color:var(--muted)}.metric strong{display:block;font-size:32px;line-height:1.4}.notice{background:#fff8db;border-left:4px solid #d2a235;padding:16px 20px;border-radius:8px;margin:16px 0}.info{background:#e8f2fb;border-left-color:#548aad}.caption{font-size:13px;color:var(--muted)}details{background:white;border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin:20px 0}summary{cursor:pointer;font-weight:600}details>div{margin-top:16px}.formula{text-align:center;font-size:23px;font-family:Georgia,serif;padding:15px}.table-wrap{overflow:auto;border:1px solid var(--border);border-radius:10px;background:#fff;max-height:470px}table{border-collapse:collapse;width:100%;font-size:13px;text-align:left}th,td{padding:11px 13px;border-bottom:1px solid #e6edf2;vertical-align:top}th{position:sticky;top:0;background:#edf3f7;color:#365268;white-space:nowrap;z-index:1;font-weight:600}tr:hover td{background:#f3faf9}td.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}.records td{min-width:110px;max-width:360px}.records td.wide{min-width:260px}.records{max-height:580px}.filters{display:grid;grid-template-columns:1fr 1fr;gap:20px}.picker{margin:0}.search{display:block;width:100%;margin-bottom:12px}.options{max-height:210px;overflow:auto}.option{display:flex;gap:8px;align-items:flex-start;padding:6px}.option:hover{background:#eef6f5}.option input{margin-top:6px}.option label{cursor:pointer}.selected{font-size:13px;max-height:100px;overflow:auto;color:var(--muted);margin:8px 0}.emp{display:flex;align-items:end;gap:16px;flex-wrap:wrap;padding:20px 0}.emp label{display:block;font-size:13px}.emp input[type=number]{width:185px}.emp .toggle{align-self:center}.actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0}button,input{font:inherit}input[type=number],input[type=search]{padding:10px 12px;border:1px solid #bacbd6;border-radius:7px;background:#fff;color:var(--ink)}input:disabled{background:#e9eef3;color:#788b9a}input[type=checkbox]{accent-color:var(--teal)}button{padding:9px 16px;border:1px solid #bacbd6;background:white;border-radius:7px;color:var(--ink);cursor:pointer}button.primary{background:var(--teal);color:white;border-color:var(--teal)}button:hover{filter:brightness(.96)}button:disabled{opacity:.45;cursor:default}button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #84c9c2;outline-offset:3px}.tag{display:inline-block;border-radius:4px;font-size:12px;background:#e5f3ee;color:#236453;padding:2px 6px;white-space:nowrap}.tag.unscored{background:#fff2d6;color:#795a1d}.chart{width:100%;min-height:350px}.regional-chart{min-width:650px}.chart-scroll{overflow:auto}.footer{margin-top:32px;border-top:1px solid var(--border);padding-top:16px;font-size:12px;color:var(--muted)}[hidden]{display:none!important}
 .footer{overflow-wrap:anywhere}.table-wrap,.chart-scroll{max-width:100%}
 @media(max-width:700px){main{padding:28px 16px}h1{font-size:34px}h2{font-size:23px}.metrics{grid-template-columns:1fr 1fr}.metric{padding:14px}.metric strong{font-size:27px}.filters{grid-template-columns:1fr}.formula{font-size:18px}.subtitle{font-size:17px}.emp{gap:12px}.emp input[type=number]{width:150px}}
+</style>
+
+<style id="dashboard-redesign">
+:root{--ink:#142b3e;--muted:#5d7183;--teal:#087e79;--teal-dark:#075e60;--border:#dce6eb;--surface:#fff;--soft:#eff6f5;--amber:#9a691d}
+html{scroll-behavior:smooth}body{background:#f3f7f8;color:var(--ink);font:15px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1380px;padding:0 36px 80px}h1{font-size:40px;line-height:1.12;letter-spacing:-.04em;margin:8px 0 12px;max-width:820px}h2{font-size:30px;line-height:1.2;letter-spacing:-.03em;margin:0 0 12px}h3{font-size:18px;line-height:1.3}p{line-height:1.65}section{margin-top:28px;background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:30px;box-shadow:0 10px 28px rgba(23,56,72,.03);scroll-margin-top:76px}
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:34px;align-items:center;margin:0 -36px;padding:30px max(36px,calc((100vw - 1308px)/2));background:linear-gradient(120deg,#edf5f4 0%,#f5f8f7 72%,#e8f1ef 100%);color:var(--ink);border-bottom:1px solid #d6e5e2}.hero .eyebrow{color:#34726f}.hero .subtitle{color:#526c76;max-width:760px;font-size:15px;margin:8px 0}.hero .pill{border-color:#c6dcd8;background:#fff;color:#376460;margin-top:5px}.hero-aside{padding:16px 18px;border:1px solid #d5e4e1;border-radius:14px;background:rgba(255,255,255,.78)}.hero-aside span{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#4e7a77}.hero-aside strong{display:block;font-size:17px;line-height:1.25;margin:5px 0}.hero-aside p{font-size:12px;line-height:1.5;color:#5d737b;margin:0}.hero-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px}.hero-links a{display:inline-flex;align-items:center;min-height:34px;padding:6px 12px;border-radius:8px;background:#176d68;color:white;text-decoration:none;font-size:12px;font-weight:700}.hero-links a.secondary{background:white;color:#315f5d;border:1px solid #c6dcd8}.hero-links a:hover{transform:translateY(-1px)}
+.section-kicker{display:block;color:var(--teal);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}.section-intro{max-width:820px;color:var(--muted);margin:0 0 22px}.metrics{gap:12px;margin:24px 0}.metric{border:1px solid var(--border);border-radius:15px;padding:17px 19px;background:linear-gradient(180deg,#fff,#f9fcfc)}.metric strong{font-size:30px;letter-spacing:-.045em;color:#123d4d}.metric span{font-size:12px;font-weight:650}.notice{border-radius:11px;background:#fff6e6;border-left-color:#d29a3f;color:#5f4828}.notice.info{background:#eaf6f4;border-left-color:var(--teal);color:#264c50}.caption{color:#617687}.formula{border-radius:13px;background:#eff6f5;color:#185a5a;font-family:Georgia,serif;font-size:clamp(18px,2vw,25px)}details{border-color:var(--border);background:#fbfdfd}details>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px}details>summary::-webkit-details-marker{display:none}details>summary:after{content:"+";font-size:22px;font-weight:400;color:var(--teal)}details[open]>summary:after{content:"−"}.table-wrap{border-color:var(--border);border-radius:13px}table{font-size:13px}th{background:#eef4f5;color:#3a5361;font-size:11px;letter-spacing:.035em;text-transform:uppercase}tbody tr:nth-child(even) td{background:#fbfdfd}tr:hover td,tbody tr:nth-child(even):hover td{background:#eff8f5}.chart-scroll{border:1px solid var(--border);border-radius:13px;background:white}.map-note-inline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}.map-note-inline div{padding:16px 18px;border-radius:12px;background:#eef6f5;border:1px solid #d9e9e5}.map-note-inline b{display:block;color:#15585b;font-size:13px}.map-note-inline span{display:block;color:#506d75;font-size:12px;margin-top:4px}.map-frame{width:100%;height:820px;border:1px solid var(--border)!important;border-radius:16px;background:#fff}.filter-panel{margin:22px 0;padding:20px;border:1px solid var(--border);border-radius:16px;background:#f7fafb}.filter-panel .filters{gap:12px}.filter-panel details{margin:0;background:white}.filter-panel .emp{padding:12px 0 0}.filter-help{display:block;color:var(--muted);font-size:12px;margin:0 0 10px}.selected{max-height:none}.actions{gap:10px}.table-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0}.table-tools button{font-size:13px}.records td.wide{min-width:220px}button{font-weight:650;transition:background .15s,transform .15s}button:hover:not(:disabled){transform:translateY(-1px)}button.primary{background:var(--teal-dark);border-color:var(--teal-dark)}button.primary:hover{background:#064f50}button:focus-visible,input:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #79c8bd;outline-offset:3px}
+@media(max-width:900px){main{padding:0 20px 52px}.hero{margin:0 -20px;padding:44px 20px 34px;grid-template-columns:1fr}.hero-aside{max-width:520px}section{padding:25px}.map-frame{height:720px}}
+@media(max-width:700px){main{padding:0 12px 40px}.hero{margin:0 -12px;padding:34px 18px}.hero .subtitle{font-size:16px}.hero-aside{padding:17px}.hero-links{gap:8px}.hero-links a{font-size:12px}section{padding:20px 16px;border-radius:16px;margin-top:14px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.metric{padding:13px}.metric strong{font-size:25px}.map-note-inline{grid-template-columns:1fr}.map-frame{height:650px}.filter-panel{padding:12px}.emp{align-items:stretch}.emp label{flex:1 1 140px}.emp input[type=number]{width:100%}.regional-chart{min-width:640px}.formula{font-size:18px}}
+@media(max-width:420px){.metrics{grid-template-columns:1fr 1fr}.metric strong{font-size:22px}.hero-links a{flex:1;justify-content:center}.map-frame{height:600px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}button,.hero-links a{transition:none}}
 </style>
 <script>/**
 * plotly.js v4.1.1
@@ -3633,13 +3645,17 @@ return Plotly;
 }));</script>
 </head>
 <body><main>
-<div class="eyebrow">CALIFORNIA · WORKFORCE TRANSITION RESEARCH</div>
+<header class="hero">
+<div class="hero-copy"><div class="eyebrow">CALIFORNIA · WORKFORCE TRANSITION RESEARCH</div>
 <h1>AI Workforce Investment Planner</h1>
-<p class="subtitle">Explore where AI indicators and labor-market conditions suggest a closer look, across occupations × California OEWS areas.</p>
+<p class="subtitle">Find California occupations and areas worth a closer look for workforce transition planning. Explore the evidence behind every screening score.</p>
 <span class="pill">BLS release · May 2025</span>
+<nav class="hero-links" aria-label="Dashboard sections"><a href="#geography">Explore the map ↗</a><a class="secondary" href="#records-section">Browse occupations</a><a class="secondary" href="#method-section">How scores work</a></nav></div>
+<aside class="hero-aside"><span>Decision support</span><strong>From signals to a shortlist</strong><p>Compare areas, inspect occupations and coverage, then export records for further review. Scores are a screening aid, not a funding recommendation.</p></aside>
+</header>
 <noscript><p class="notice">Enable JavaScript in your browser to display the embedded data, charts and table.</p></noscript>
 
-<section><h2>Scope, Releases and Limitations</h2>
+<section id="scope-section"><span class="section-kicker">01 / At a glance</span><h2>Scope & data coverage</h2><p class="section-intro">A quick view of the records behind this dashboard. Coverage matters when comparing areas or occupations.</p>
 <div class="metrics" id="metrics"></div>
 <div class="notice" id="coverage"></div>
 <p>This is a relative screening index for further assessment, not a probability of displacement, a causal estimate of AI job loss, or an automatic investment decision. Weights represent proposed policy assumptions.</p>
@@ -3652,7 +3668,7 @@ return Plotly;
 </div></details>
 </section>
 
-<section><h2>What Does the Priority Score Mean?</h2>
+<section id="method-section"><span class="section-kicker">02 / Method</span><h2>What does the priority score mean?</h2>
 <p>The four-indicator score uses every eligible occupation × area record in a fixed California reference set. Higher values mean greater screening priority under stated assumptions, not proven AI-caused displacement. Table filters do not change scores or global ranks.</p>
 <div class="formula">P ≈ 35.3% E + 35.3% L + 11.8% W + 17.6% O</div>
 <div class="table-wrap"><table><thead><tr><th>Component</th><th>Weight</th><th>Percentile input</th><th>Interpretation</th></tr></thead><tbody>
@@ -3668,10 +3684,10 @@ return Plotly;
 <p>Scoring requires finite exposure, employment, wage and employment-change values, positive employment and wage, and nonnegative exposure. Missing or invalid required fields yield no score or rank; no values are imputed. Global ranks use unrounded scores descending, then AREA and OCC_CODE ascending.</p>
 </div></details></section>
 
-<section><h2>Priority Score Distribution</h2><p id="distribution-caption" class="caption"></p><div id="distribution" class="chart"></div><p class="caption">Unscored records are excluded, never plotted as zeroes. Table filters do not affect this distribution.</p></section>
+<section id="distribution-section"><span class="section-kicker">03 / Distribution</span><h2>Priority score distribution</h2><p id="distribution-caption" class="caption"></p><div id="distribution" class="chart"></div><p class="caption">Unscored records are excluded, never plotted as zeroes. Table filters do not affect this distribution.</p></section>
 
-<section><h2>California Area Map (Map & Regional Ranking View)</h2>
-<iframe id="geographic-map" title="California OEWS map metrics choropleth" style="width:100%;height:870px;border:0" srcdoc="&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;&lt;style&gt;
+<section id="geography"><span class="section-kicker">04 / Geography</span><h2>Explore California areas</h2><p class="section-intro">Use the map to inspect a regional measure, then compare the separate employment-weighted ranking below.</p><div class="map-note-inline"><div><b>Map color · median score</b><span>Typical eligible occupation–area record in each area. Change the map metric with the selector.</span></div><div><b>Regional rank · weighted score</b><span>Employment-weighted average across scored detailed occupations. Its rank stays fixed.</span></div></div>
+<iframe id="geographic-map" title="California OEWS map metrics choropleth" class="map-frame" srcdoc="&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;&lt;style&gt;
 *{box-sizing:border-box}body{margin:0;font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;color:#182f43;background:#f7f9fc}.map-card{position:relative;border:1px solid #d9e3eb;border-radius:12px;background:linear-gradient(120deg,#edf4f8,#f8fbfc);overflow:hidden}.map-top{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;gap:10px}.map-top b{font-size:16px}.map-top small{display:block;color:#536a7d;margin-top:3px}.buttons{display:flex;gap:6px}button{border:1px solid #b9cbd6;background:white;color:#182f43;border-radius:5px;padding:6px 10px;cursor:pointer}button:focus-visible{outline:3px solid #007f78}svg{display:block;width:100%;height:540px;touch-action:none;cursor:grab}.region{stroke:#fff;stroke-width:1.15;vector-effect:non-scaling-stroke;fill-rule:evenodd;cursor:pointer}.region:hover,.region:focus{stroke:#142f42;stroke-width:2.8;outline:none;filter:brightness(1.09)}.legend{display:flex;gap:14px;align-items:center;justify-content:center;padding:10px 18px 16px;flex-wrap:wrap;font-size:12px;color:#365268}.gradient{height:12px;width:210px;background:linear-gradient(90deg,#e3f2e9 0%,#add9cc 25%,#5eaaa2 50%,#247487 75%,#083344 100%);border-radius:3px}.ticks{display:flex;justify-content:space-between}.map-detail{min-height:74px;padding:12px 18px;background:white;border-top:1px solid #d9e3eb;font-size:13px}.map-detail b{display:block;font-size:14px;margin-bottom:3px}#tooltip{position:fixed;z-index:10;pointer-events:none;background:#fff;border:1px solid #c4d6df;box-shadow:0 3px 16px #182f4324;padding:12px;border-radius:8px;font-size:12px;max-width:330px}#tooltip b{display:block;margin-bottom:6px}.tip-row{display:flex;gap:15px;justify-content:space-between}.tip-row span:first-child{color:#536a7d}.map-note{color:#536a7d;font-size:11px;margin:8px 3px}.key{white-space:nowrap}@media(max-width:550px){svg{height:450px}.map-top{padding:10px}.map-top b{font-size:14px}.map-top small{font-size:10px}.map-detail{font-size:11px}.legend{gap:8px}.gradient{width:160px}}
 .metric-controls{padding:0 18px 10px}.metric-controls label{font-size:12px;font-weight:650;margin-right:10px}.metric-controls select{max-width:100%;padding:8px 10px;border:1px solid #b9cbd6;border-radius:6px;background:white;color:#182f43;font:inherit}.metric-controls select:focus-visible{outline:3px solid #007f78}#metric-description{font-size:12px;color:#536a7d;margin:7px 0 0}.map-detail{min-height:90px}@media(max-width:550px){.metric-controls{padding:0 10px 10px}.metric-controls select{width:100%;margin-top:5px}svg{height:400px}}
 &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;map-card&quot;&gt;&lt;div class=&quot;map-top&quot;&gt;&lt;div&gt;&lt;b id=&quot;map-title&quot;&gt;California · Median Priority Score&lt;/b&gt;&lt;small&gt;Hover, tap or focus a region for coverage · drag to pan&lt;/small&gt;&lt;/div&gt;&lt;div class=&quot;buttons&quot;&gt;&lt;button id=&quot;zoom-in&quot; aria-label=&quot;Zoom in&quot;&gt;+&lt;/button&gt;&lt;button id=&quot;zoom-out&quot; aria-label=&quot;Zoom out&quot;&gt;−&lt;/button&gt;&lt;button id=&quot;reset-map&quot; aria-label=&quot;Reset map view&quot;&gt;Reset view&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
@@ -3723,20 +3739,20 @@ const mobile=window.matchMedia(&#x27;(max-width:550px)&#x27;);const defaultView=
 <div class="notice" id="regional-warning"></div><div id="region-table" class="table-wrap"></div>
 </section>
 
-<section><h2>Ranked Occupation × Area Records</h2>
+<section id="records-section"><span class="section-kicker">05 / Records</span><h2>Browse occupation × area records</h2>
 <p>Filters apply only to this table and its CSV export. Official scores, ranks and all preceding sections remain fixed.</p>
-<div class="filters">
-<details class="picker"><summary>Occupation <span id="occupation-count"></span></summary><div><input class="search" id="occupation-search" type="search" aria-label="Search occupations" placeholder="Search by occupation or SOC code"><div class="options" id="occupation-options"></div></div></details>
-<details class="picker"><summary>Area <span id="area-count"></span></summary><div><input class="search" id="area-search" type="search" aria-label="Search areas" placeholder="Search by area or area code"><div class="options" id="area-options"></div></div></details>
+<div class="filter-panel"><div class="filters">
+<details class="picker"><summary>Occupation <span id="occupation-count"></span></summary><div><input class="search" id="occupation-search" type="search" aria-label="Search occupations" placeholder="Search by occupation or SOC code"><small class="filter-help">Type to find an option, then select its checkbox to filter the table.</small><div class="options" id="occupation-options"></div></div></details>
+<details class="picker"><summary>Area <span id="area-count"></span></summary><div><input class="search" id="area-search" type="search" aria-label="Search areas" placeholder="Search by area or area code"><small class="filter-help">Type to find an option, then select its checkbox to filter the table.</small><div class="options" id="area-options"></div></div></details>
 </div>
 <div class="selected" id="selections"></div>
 <div class="emp"><label for="employment-min">Minimum published employment<input id="employment-min" type="number" min="0" step="1" placeholder="No minimum"></label><label for="employment-max">Maximum published employment<input id="employment-max" type="number" min="0" step="1" placeholder="No maximum"></label><button id="apply-range" class="primary">Apply Range</button><button id="reset">Reset Table Filters</button></div>
-<p class="caption">Employment bounds are inclusive. Draft bounds do not affect the table until Apply Range or Enter. Missing employment is included with no range and excluded with an applied bound. Missing cells display as —. Unscored records remain at the end, with an explanation.</p>
+</div><p class="caption">Employment bounds are inclusive. Draft bounds do not affect the table until Apply Range or Enter. Missing employment is included with no range and excluded with an applied bound. Missing cells display as —. Unscored records remain at the end, with an explanation.</p>
 <p class="notice" id="range-error" role="alert" aria-live="assertive" hidden></p>
 <p id="match-count" aria-live="polite"></p>
 <div class="actions"><button class="primary" id="download">Download all matching records · CSV</button><span class="caption">Includes all matching pages, original field names, and unrounded source and score values.</span></div>
-<div class="table-wrap records"><table id="records"><thead></thead><tbody></tbody></table></div>
-<div class="actions"><button id="previous">Previous</button><span id="page-label" aria-live="polite"></span><button id="next">Next</button><span class="caption">50 rows per page · scroll horizontally for all source fields and components</span></div>
+<div class="table-tools"><button id="toggle-columns" type="button" aria-pressed="false">Show all columns</button><span class="caption">Start with key decision fields; expand to inspect every source field and score component.</span></div><div class="table-wrap records"><table id="records"><thead></thead><tbody></tbody></table></div>
+<div class="actions"><button id="previous">Previous</button><span id="page-label" aria-live="polite"></span><button id="next">Next</button><span class="caption">50 rows per page · use Show all columns to inspect source fields and components</span></div>
 <p class="caption">CSV blanks mean missing, not zero. Import AREA and OCC_CODE as text in spreadsheet software to preserve identifiers and leading zeroes.</p>
 </section>
 
@@ -3762,7 +3778,7 @@ const areaLabels=D.areas.map(r=>r.AREA_TITLE.replace(' Region of California nonm
 Plotly.newPlot('regions',[{type:'bar',orientation:'h',x:D.areas.map(r=>r.regional_priority_score),y:areaLabels,marker:{color:'#007f78'},customdata:D.areas.map(r=>[r.regional_rank,r.AREA,pct(r.summary_record_coverage),pct(r.employment_coverage),r.summary_scored_record_count]),hovertemplate:'%{y}<br>Score: %{x:.1f}<br>Rank: %{customdata[0]}<br>AREA: %{customdata[1]}<br>Detailed record coverage: %{customdata[2]}<br>Known employment coverage: %{customdata[3]}<br>Scored detailed occupations: %{customdata[4]}<extra></extra>'}],{...layout,height:940,margin:{t:15,r:20,b:65,l:290},xaxis:{range:[0,100],title:{text:'Employment-weighted priority score (index points)'},gridcolor:'#e3eaf0'},yaxis:{autorange:'reversed',categoryorder:'array',categoryarray:areaLabels}},plotConfig);
 $('regional-warning').textContent=`${D.areas.filter(r=>r.summary_record_coverage<.5).length} of ${D.areas.length} areas have less than 50% detailed-record coverage. Compare coverage alongside rank: regional differences may reflect missingness as well as measured conditions.`;
 simpleTable('region-table',[{key:'regional_rank',label:'Regional rank',format:v=>f(v,0)},{key:'AREA_TITLE',label:'Area'},{key:'AREA',label:'Area code'},{key:'area_class',label:'Area class'},{key:'regional_priority_score',label:'Regional score',format:f},{key:'summary_record_coverage',label:'Detailed record coverage',format:pct},{key:'employment_coverage',label:'Known employment coverage',format:pct},{key:'summary_scored_record_count',label:'Scored detailed records',format:v=>nf.format(v)},{key:'summary_record_count',label:'Total detailed records',format:v=>nf.format(v)},{key:'scored_employment',label:'Scored employment',format:v=>nf.format(v)},{key:'total_known_published_employment',label:'Known published employment',format:v=>v==null?'—':nf.format(v)},{key:'total_record_count',label:'All source records',format:v=>nf.format(v)},{key:'scored_record_count',label:'All scored records',format:v=>nf.format(v)},{key:'record_coverage',label:'All-record coverage',format:pct},{key:'unknown_employment_record_count',label:'Unknown employment records',format:v=>nf.format(v)},{key:'coverage_status',label:'Coverage status'}],D.areas);
-// Fixed v2.0 explanations. These charts intentionally ignore table filter state.
+// Fixed score explanations. These charts intentionally ignore table filter state.
 const contributionParts=[
   ['exposure','Observed exposure','#087f79'],
   ['employment','Employment scale','#345d83'],
@@ -3825,7 +3841,9 @@ const choices = {
 };
 let filtered=rows, page=0;
 const pageSize=50;
-const displayColumns=['global_rank','priority_score','score_status',...D.columns.filter(c=>!['global_rank','priority_score','score_status'].includes(c))];
+const exportColumns=['global_rank','priority_score','score_status',...D.columns.filter(c=>!['global_rank','priority_score','score_status'].includes(c))];
+const keyColumns=['global_rank','priority_score','score_status','OCC_TITLE','OCC_CODE','AREA_TITLE','AREA','TOT_EMP','A_MEAN','job_exposure','employment_change_pct','claude_usage_pct'];
+let displayColumns=keyColumns;
 const labels={global_rank:'Global rank',priority_score:'Priority score',score_status:'Score status',release:'Release',area_class:'Area class',AREA:'Area code',AREA_TITLE:'Area',OCC_CODE:'Occupation code',OCC_TITLE:'Occupation',job_exposure:'Job exposure (global occupation proxy)',claude_usage_pct:'Claude CA usage (%) · context only',TOT_EMP:'Published employment',A_MEAN:'Mean annual wage (USD)',employment_change_pct:'Employment change (%)',score_explanation:'Score explanation'};
 const feedback=$('range-error');
 
@@ -3880,6 +3898,7 @@ function valueDisplay(c,v){
   if(c==='job_exposure')return f(v,4);
   return String(v);
 }
+function renderHeader(){ $('records').querySelector('thead').innerHTML='<tr>'+displayColumns.map(c=>'<th>'+esc(labels[c]||c.replaceAll('_',' '))+'</th>').join('')+'</tr>'; }
 function renderRecords(){
   const pages=Math.max(1,Math.ceil(filtered.length/pageSize));
   page=Math.max(0,Math.min(page,pages-1));
@@ -3920,7 +3939,14 @@ function resetFilters(){
   $('employment-min').value='';$('employment-max').value='';
   filtered=rows;page=0;message('');renderAllTable();
 }
-$('records').querySelector('thead').innerHTML='<tr>'+displayColumns.map(c=>'<th>'+esc(labels[c]||c.replaceAll('_',' '))+'</th>').join('')+'</tr>';
+renderHeader();
+$('toggle-columns').addEventListener('click',()=>{
+  const expanded=displayColumns===keyColumns;
+  displayColumns=expanded?exportColumns:keyColumns;
+  $('toggle-columns').textContent=expanded?'Show key columns':'Show all columns';
+  $('toggle-columns').setAttribute('aria-pressed',String(expanded));
+  renderHeader();renderRecords();
+});
 for(const type of ['occupation','area'])$(type+'-search').addEventListener('input',()=>renderChoices(type));
 $('apply-range').addEventListener('click',applyRange);
 for(const id of ['employment-min','employment-max'])$(id).addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();applyRange();}});
@@ -3929,7 +3955,7 @@ $('previous').addEventListener('click',()=>{page--;renderRecords();});
 $('next').addEventListener('click',()=>{page++;renderRecords();});
 $('download').addEventListener('click',()=>{
   const csvCell=v=>v==null?'':'"'+String(v).replaceAll('"','""')+'"';
-  const csv='\ufeff'+[displayColumns.join(','),...filtered.map(r=>displayColumns.map(c=>csvCell(r[c])).join(','))].join('\r\n');
+  const csv='\ufeff'+[exportColumns.join(','),...filtered.map(r=>exportColumns.map(c=>csvCell(r[c])).join(','))].join('\r\n');
   const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
   const a=document.createElement('a');a.href=url;a.download='workforce_priority_filtered.csv';a.click();
   setTimeout(()=>URL.revokeObjectURL(url),1000);
