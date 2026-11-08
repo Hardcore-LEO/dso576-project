@@ -1,7 +1,7 @@
 """Streamlit launcher for the AI Workforce Investment Planner.
 
 Run from the repository root with:
-    streamlit run dashboard_final/AI_Workforce_Streamlit/streamlit_app.py
+    streamlit run dashboard_final/streamlit_app.py
 """
 
 from pathlib import Path

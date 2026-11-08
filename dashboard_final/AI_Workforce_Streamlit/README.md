@@ -1,6 +1,19 @@
-# AI Workforce Investment Planner - Streamlit
+# AI Workforce Investment Planner — Streamlit Deployment
 
-This deployment package publishes the AI Workforce Investment Planner with Streamlit Community Cloud. The Streamlit launcher loads the self-contained dashboard and preserves its filters, charts, maps, tables, and CSV downloads.
+This folder is the current, self-contained deployment package for the AI Workforce Investment Planner. The Streamlit launcher loads the bundled dashboard and preserves its filters, charts, maps, tables, and CSV downloads.
+
+> **Use this folder for deployment.** The recommended Streamlit Community Cloud entrypoint is `dashboard_final/AI_Workforce_Streamlit/streamlit_app.py`.
+
+## Quick Start
+
+From the repository root:
+
+```powershell
+python -m pip install -r dashboard_final/AI_Workforce_Streamlit/requirements.txt
+python -m streamlit run dashboard_final/AI_Workforce_Streamlit/streamlit_app.py
+```
+
+The application normally opens at `http://localhost:8501`.
 
 ## Application Architecture
 
@@ -33,6 +46,8 @@ The app uses a project-relative path to load the HTML file from the same directo
 
 Keep these files together in this directory when deploying.
 
+The HTML file is intentionally committed with the deployment package because it contains the dashboard interface, public data, and browser-side interactions required at runtime.
+
 ## Run Locally
 
 Run the following commands from the repository root.
@@ -57,8 +72,6 @@ python -m pip install -r dashboard_final/AI_Workforce_Streamlit/requirements.txt
 python -m streamlit run dashboard_final/AI_Workforce_Streamlit/streamlit_app.py
 ```
 
-The local application is normally available at `http://localhost:8501`.
-
 ## Deploy
 
 1. Review the local changes and confirm that the required deployment files are included.
@@ -69,6 +82,12 @@ The local application is normally available at `http://localhost:8501`.
 6. Enter `dashboard_final/AI_Workforce_Streamlit/streamlit_app.py` as the main file path.
 7. In **Advanced settings**, select Python `3.12`. No secrets are required for this app.
 8. Select **Deploy** and wait for the app to finish building.
+
+After deployment, add the verified public `.streamlit.app` URL here:
+
+```text
+Public app URL: not published yet
+```
 
 ## Verification Checklist
 
@@ -97,6 +116,17 @@ python generate_ai_workforce_planner.py "AI_Workforce_Investment_Planner_copy.ht
 ```
 
 The generator uses only the Python standard library.
+
+## Updating This Deployment Package
+
+Treat this directory as one unit. When the dashboard changes:
+
+1. Replace `AI_Workforce_Investment_Planner.html` with the latest generated dashboard.
+2. Keep `streamlit_app.py` and `requirements.txt` in this same directory.
+3. Run the app locally and complete the verification checklist above.
+4. Review the Git diff before committing so the deployment package and its documentation change together.
+
+The similarly named files directly under `dashboard_final/` are not the recommended Community Cloud entrypoint. Do not combine the two copies when configuring the deployment.
 
 ## Official Documentation
 
